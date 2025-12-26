@@ -3,6 +3,7 @@
 /include
 *.tsbuildinfo
 flamework.build
+sourcemap.json
 
 /archive
 block-and-hammer.rbxl*
