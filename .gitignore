@@ -1,0 +1,8 @@
+/node_modules
+/out
+/include
+*.tsbuildinfo
+flamework.build
+
+/archive
+block-and-hammer.rbxl

@@ -1,0 +1,47 @@
+{
+	"Flamework Controller": {
+		"prefix": ["controller"],
+		"description": "Create a Flamework controller",
+		"body": [
+			"import { Controller, OnStart } from \"@flamework/core\";",
+			"",
+			"@Controller({})",
+			"export class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}Controller implements OnStart {",
+			"\tonStart(): void {",
+			"\t\t$0",
+			"\t}",
+			"}",
+		],
+	},
+	"Flamework Service": {
+		"prefix": ["service"],
+		"description": "Create a Flamework service",
+		"body": [
+			"import { Service, OnStart } from \"@flamework/core\";",
+			"",
+			"@Service({})",
+			"export class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}Service implements OnStart {",
+			"\tonStart(): void {",
+			"\t\t$0",
+			"\t}",
+			"}",
+		],
+	},
+	"Flamework Component": {
+		"prefix": ["component"],
+		"description": "Create a Flamework component",
+		"body": [
+			"import { OnStart } from \"@flamework/core\";",
+			"import { Component, BaseComponent } from \"@flamework/components\";",
+			"",
+			"interface Attributes {}",
+			"",
+			"@Component({})",
+			"export class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}Component extends BaseComponent<Attributes> implements OnStart {",
+			"\tonStart(): void {",
+			"\t\t$0",
+			"\t}",
+			"}",
+		],
+	},
+}

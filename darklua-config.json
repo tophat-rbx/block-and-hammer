@@ -1,0 +1,19 @@
+{
+	"rules": [
+		{ "rule": "rename_variables", "include_functions": true },
+		"convert_square_root_call",
+		"remove_method_call",
+		"remove_nil_declaration",
+		"convert_function_to_assignment",
+		"convert_local_function_to_assign",
+		"remove_spaces",
+		"remove_comments",
+		"remove_unused_variable",
+		"remove_unused_while",
+		"convert_luau_number",
+		"group_local_assignment",
+		"remove_unused_if_branch",
+		"remove_empty_do",
+		"remove_compound_assignment"
+	]
+}
